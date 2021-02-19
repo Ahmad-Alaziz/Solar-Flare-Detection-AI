@@ -66,75 +66,7 @@ Flare Data Set, provides 13 attributes, 3 of them being class attributes
 correlating to the number of recorded C, M, and X class flares in the
 next 24 hours. The attributes go as follows:
 
-
-
-|
-- **Code for class (modified Zurich class)**
- |
-- (A,B,C,D,E,F,H)
- |
-| --- | --- |
-|
-- **Code for largest spot size**
- |
-- (X,R,S,A,H,K)
- |
-|
-- **Code for spot distribution**
- |
-- (X,O,I,C)
- |
-|
-- **Activity**
- |
-- (1 = reduced, 2 = unchanged)
- |
-|
-- **Evolution**
- |
-- (1 = decay, 2 = no growth, 3 = growth)
- |
-|
-- **Previous 24 hour flare activity code**
- |
-- (1 = nothing as big as an M1, 2 = one M1, 3 = more activity than one M1)
- |
-|
-- **Historically-complex**
- |
-- (1 = Yes, 2 = No)
- |
-|
-- **Did region become historically complex on this pass across the sun&#39;s disk**
- |
-- (1 = yes, 2 = no)
- |
-|
-- **Area**
- |
-- (1 = small, 2 = large)
- |
-|
-- **Area of the largest spot**
- |
-- (1 = \&lt;=5, 2 = \&gt;5)
- |
-|
-- **C-class flares production by this region**
- |
-- Number in the following 24 hours
- |
-|
-- **M-class flares production by this region**
- |
-- Number in the following 24 hours
- |
-|
-- **X-class flares production by this region**
- |
-- Number in the following 24 hours
- |
-
+![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/0.PNG)
 
 **Methodology and Data:**
 
@@ -148,6 +80,7 @@ to avoid flare.data1 as much as possible. With that said, we can now
 move on to the first stop in our data-processing chain, importing.
 
 1)  ***Importing:***
+![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/1.PNG)
 
 Since our dataset didn't have any headers, we decided to add those
 myself for good practice and future ease of use. we then created our
@@ -156,7 +89,7 @@ dataset. Notice as well, that we used the names attribute to name the
 columns of our data frame with the headers that we created.
 
 2)  ***Transforming:***
-
+![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/2.PNG)
 After taking a look at our dataset we can see that our first three
 columns contain string values rather than numeric ones. Numbers however
 is the language of our machine learning algorithm, thus for the magic to
@@ -175,6 +108,7 @@ decided to add one more column a "sum-class" which will be the sum of
 the C, M, and X class results. we then turned the result into a Boolean
 value. If the sum is greater than 0, the value of the sum column will be
 1, otherwise, it is a 0.
+![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/3.PNG)
 
 3)  ***Visualizing:***
 
@@ -186,11 +120,12 @@ a different data visualization tool known as PowerBI, which makes the
 process extremely easy and straightforward. To do that; however, we
 first needed to export our newly modified dataset, so we created a
 function that does that and called it:
+![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/4.PNG)
 
 Moving on, we imported the data into PowerBI and started creating some
 art!
 
-![](media/image5.png){width="6.116744313210849in" height="3.325in"}
+![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/5.PNG){width="6.116744313210849in" height="3.325in"}
 
 The first report we created, and what we believe to be the most
 important is the key influencers report. It analyzed how all the columns
@@ -204,7 +139,7 @@ What this means is that if the code of the largest sunspot detected 24
 hours ahead is either R or S, we are much more likely to experience a
 solar flare!
 
-![](media/image6.png){width="6.801906167979003in"
+![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/6.PNG){width="6.801906167979003in"
 height="3.7446806649168853in"}
 
 From the "Decrease" part of the key influencers report, we can also
@@ -217,17 +152,18 @@ Many more useful reports were created, which gave me a lot of insight
 and an intuitive understanding of the data. Here are two more to list a
 few:
 
-![](media/image7.png){width="3.205016404199475in"
-height="1.6107381889763779in"}![](media/image8.png){width="2.765100612423447in"
+![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/7.PNG){width="3.205016404199475in"
+height="1.6107381889763779in"}![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/8.PNG){width="2.765100612423447in"
 height="1.6339359142607175in"}
 
 Finally, we also checked for multicollinearity and printed out a
 detailed summary of our data in python:
+![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/9.PNG)
 
-![](media/image10.png){width="5.32380905511811in"
+![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/10.PNG){width="5.32380905511811in"
 height="3.581626202974628in"}
 
-![](media/image11.png){width="7.211362642169729in"
+![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/11.PNG){width="7.211362642169729in"
 height="1.5809525371828521in"}
 
 Now that we were done with data analysis, we could finally move on to
@@ -241,6 +177,7 @@ creating an optimal model, we decided to write a function that creates a
 random model based on random variables. The idea behind that is that we
 would create a large number of random models, test them, and then save
 the model with the highest accuracy for future use:
+![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/12.PNG)
 
 As you can see, we first create a list of 4 random integers and 1 random
 decimal with varying ranges,
@@ -287,6 +224,7 @@ Finally now having our function that creates random models ready, we
 could create the training function which will be responsible for
 creating a specified number of these random models and choosing the one
 with the highest accuracy:
+![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/13.PNG)
 
 **Evaluation:**
 
@@ -301,7 +239,7 @@ used the model.save() function.
 we decided to split the prediction task into 3 primary functions:
 
 Function 1: -
-
+![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/14.PNG)
 This first function takes in an array of input values and returns a
 rounded value of the model.predict() function. The model.predict()
 function returns a number from 0 to 1 based on confidence levels that a
@@ -310,6 +248,7 @@ solar flare is bound to hit, After rounding we only return either 0 or
 hit within 24 hours.
 
 Functions 2 and 3: -
+![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/15.PNG)
 
 The functions above are simply for printing a more readable and easily
 understandable response to the user. we also decided to create a 'mode'
