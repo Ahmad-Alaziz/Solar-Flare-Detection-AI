@@ -139,8 +139,8 @@ What this means is that if the code of the largest sunspot detected 24
 hours ahead is either R or S, we are much more likely to experience a
 solar flare!
 <br/>
-![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/6.PNG){width="6.801906167979003in"
-height="3.7446806649168853in"}
+
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/6.PNG" width="60%">
 
 From the "Decrease" part of the key influencers report, we can also
 observe that when activity is 1, we are much more likely to notice a
@@ -152,19 +152,18 @@ Many more useful reports were created, which gave me a lot of insight
 and an intuitive understanding of the data. Here are two more to list a
 few:
 <br/>
-![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/7.PNG){width="3.205016404199475in"
-height="1.6107381889763779in"}![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/8.PNG){width="2.765100612423447in"
-height="1.6339359142607175in"}
+
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/7.PNG" width="40%">
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/8.PNG" width="40%">
 
 Finally, we also checked for multicollinearity and printed out a
 detailed summary of our data in python:<br/>
 ![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/9.PNG)
 <br/>
-![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/10.PNG){width="5.32380905511811in"
-height="3.581626202974628in"}
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/10.PNG" width="60%">
+
 <br/>
-![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/11.PNG){width="7.211362642169729in"
-height="1.5809525371828521in"}
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/11.PNG" width="60%">
 
 Now that we were done with data analysis, we could finally move on to
 creating our sequential model and training it. There are numerous
@@ -177,7 +176,7 @@ creating an optimal model, we decided to write a function that creates a
 random model based on random variables. The idea behind that is that we
 would create a large number of random models, test them, and then save
 the model with the highest accuracy for future use:<br/>
-![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/12.PNG)
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/12.PNG" width="60%">
 
 As you can see, we first create a list of 4 random integers and 1 random
 decimal with varying ranges,
@@ -224,7 +223,7 @@ Finally now having our function that creates random models ready, we
 could create the training function which will be responsible for
 creating a specified number of these random models and choosing the one
 with the highest accuracy:<br/>
-![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/13.PNG)
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/13.PNG" width="60%">
 
 **Evaluation:**
 
@@ -239,7 +238,7 @@ used the model.save() function.
 we decided to split the prediction task into 3 primary functions:
 
 Function 1: -<br/>
-![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/14.PNG)
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/14.PNG" width="60%">
 This first function takes in an array of input values and returns a
 rounded value of the model.predict() function. The model.predict()
 function returns a number from 0 to 1 based on confidence levels that a
@@ -248,7 +247,7 @@ solar flare is bound to hit, After rounding we only return either 0 or
 hit within 24 hours.
 
 Functions 2 and 3: -<br/>
-![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/15.PNG)
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/15.PNG" width="60%">
 
 The functions above are simply for printing a more readable and easily
 understandable response to the user. we also decided to create a 'mode'
