@@ -1,3 +1,8 @@
+
+Report
+==========
+
+
 **Abstract**
 
 The aim of this report is to present an AI solution to predicting solar
@@ -223,7 +228,7 @@ Finally now having our function that creates random models ready, we
 could create the training function which will be responsible for
 creating a specified number of these random models and choosing the one
 with the highest accuracy:<br/>
-<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/13.PNG" width="60%">
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/13.PNG" width="86%">
 
 **Evaluation:**
 
@@ -238,7 +243,7 @@ used the model.save() function.
 we decided to split the prediction task into 3 primary functions:
 
 Function 1: -<br/>
-<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/14.PNG" width="60%">
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/14.PNG" width="86%">
 This first function takes in an array of input values and returns a
 rounded value of the model.predict() function. The model.predict()
 function returns a number from 0 to 1 based on confidence levels that a
@@ -247,7 +252,7 @@ solar flare is bound to hit, After rounding we only return either 0 or
 hit within 24 hours.
 
 Functions 2 and 3: -<br/>
-<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/15.PNG" width="60%">
+<img src="https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/15.PNG" width="86%">
 
 The functions above are simply for printing a more readable and easily
 understandable response to the user. we also decided to create a 'mode'
