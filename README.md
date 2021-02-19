@@ -70,7 +70,9 @@ solar flares of any class. The dataset we are using, the UCI- Solar
 Flare Data Set, provides 13 attributes, 3 of them being class attributes
 correlating to the number of recorded C, M, and X class flares in the
 next 24 hours. The attributes go as follows:
-<br/>
+
+
+<br/><br/>
 ![alt text](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/0.PNG)
 
 **Methodology and Data:**
