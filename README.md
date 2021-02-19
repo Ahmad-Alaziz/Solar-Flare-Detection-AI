@@ -125,7 +125,7 @@ function that does that and called it:<br/>
 Moving on, we imported the data into PowerBI and started creating some
 art!
 <br/>
-![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/5.PNG){width="6.116744313210849in" height="3.325in"}
+![](https://github.com/Ahmad-Alaziz/Solar-Flare-Detection-AI/blob/main/Report-Media/5.PNG| width="6.116744313210849in" height="3.325in")
 
 The first report we created, and what we believe to be the most
 important is the key influencers report. It analyzed how all the columns
