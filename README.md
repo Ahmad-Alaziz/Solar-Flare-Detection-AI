@@ -67,19 +67,73 @@ correlating to the number of recorded C, M, and X class flares in the
 next 24 hours. The attributes go as follows:
 
 
-•	Code for class (modified Zurich class)	                                    :	(A,B,C,D,E,F,H)
-•	Code for largest spot size	                                                :	(X,R,S,A,H,K)
-•	Code for spot distribution	                                                :	(X,O,I,C)
-•	Activity	                                                                :	(1 = reduced, 2 = unchanged)
-•	Evolution                                                                	:	(1 = decay, 2 = no growth, 3 = growth)
-•	Previous 24 hour flare activity code	                                    :	(1 = nothing as big as an M1, 2 = one M1, 3 = more activity than one M1)
-•	Historically-complex                                                       	:	(1 = Yes, 2 = No)
-•	Did region become historically complex on this pass across the sun's disk  	:	(1 = yes, 2 = no)
-•	Area	                                                                    :	(1 = small, 2 = large)
-•	Area of the largest spot	                                                :	(1 = <=5, 2 = >5)
-•	C-class flares production by this region	                                :	Number in the following 24 hours  
-•	M-class flares production by this region                                   	:	Number in the following 24 hours 
-•	X-class flares production by this region                                	:	Number in the following 24 hours 
+
+|
+- **Code for class (modified Zurich class)**
+ |
+- (A,B,C,D,E,F,H)
+ |
+| --- | --- |
+|
+- **Code for largest spot size**
+ |
+- (X,R,S,A,H,K)
+ |
+|
+- **Code for spot distribution**
+ |
+- (X,O,I,C)
+ |
+|
+- **Activity**
+ |
+- (1 = reduced, 2 = unchanged)
+ |
+|
+- **Evolution**
+ |
+- (1 = decay, 2 = no growth, 3 = growth)
+ |
+|
+- **Previous 24 hour flare activity code**
+ |
+- (1 = nothing as big as an M1, 2 = one M1, 3 = more activity than one M1)
+ |
+|
+- **Historically-complex**
+ |
+- (1 = Yes, 2 = No)
+ |
+|
+- **Did region become historically complex on this pass across the sun&#39;s disk**
+ |
+- (1 = yes, 2 = no)
+ |
+|
+- **Area**
+ |
+- (1 = small, 2 = large)
+ |
+|
+- **Area of the largest spot**
+ |
+- (1 = \&lt;=5, 2 = \&gt;5)
+ |
+|
+- **C-class flares production by this region**
+ |
+- Number in the following 24 hours
+ |
+|
+- **M-class flares production by this region**
+ |
+- Number in the following 24 hours
+ |
+|
+- **X-class flares production by this region**
+ |
+- Number in the following 24 hours
+ |
 
 
 **Methodology and Data:**
